@@ -1,7 +1,74 @@
 /* Your Website Styles */
+body {
+  background: url("../img/bg-img.png");
+}
 
+header {
+	background: rgba(179, 226, 252, .9);
+	border: solid rgb(50, 0, 255);
+	color: rgb(255, 113, 1);
+	font-family: 'Bitter', serif;	
+	text-align: center;
+	font-size: 1.25em;
+	position: fixed;
+	width: 100%;
+}
+
+p, ul {
+	color: rgb(50, 0, 255);
+	font-size: 1.2em;
+	margin: 10px;
+}
+
+.container:first-child .grid_12:first-child h1 {
+	margin: 10px 0 0 0;
+}
 
 /* Show Grid */
 .showgrid {
 	background: url("../img/grid-bg.png") repeat-y;
+}
+
+.boxes {
+	background: rgb(246, 240, 191);
+	border-radius: 10px;
+  	margin: 25px 40px 20px 30px;
+  	margin-top: 100px;
+  	box-shadow: 10px 10px 10px rgb(50, 0, 255);
+}
+
+.boxes1 {
+	background: rgb(246, 240, 191);
+	border-radius: 10px;
+	height: 400px;
+  	margin: 10px 40px 20px 30px;
+  	box-shadow: 10px 10px 10px rgb(50, 0, 255);
+  }
+
+/* top navigation div */
+#navcontainer ul {
+	background-color: rgb(246, 240, 191);
+	float: left;
+	width: 100%;
+	padding-right: 32px; /* bullets are included in the padding area */
+	/* removing bullets requires padding to be added at the right */
+	padding: 0; /* duplicates the default above, but fixes issues with Safari and IE */
+	margin: 0; /* duplicates the default above, but fixes issues with Safari and IE */
+}
+#navcontainer ul li { /* inline keeps layout horizontal */
+	display: inline;
+}
+#navcontainer ul li a {
+	padding: 0.2em 1em;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid rgb(50, 0, 255);
+	color: rgb(50, 0, 255);
+}
+/* change the background-color to be #369 */
+#navcontainer ul li a:hover { /* controls the over or hover state of rollover */
+	background-color: rgb(179, 226, 252);
+}
+#navcontainer ul li #current { /* sets the link of the active page tab color to be different */
+	background-color: #D2691E;
 }
