@@ -3,55 +3,130 @@ body {
   background: url("../img/bg-img.png");
 }
 
-header {
-	background: rgba(179, 226, 252, .9);
+header h1 {
+	background: rgb(179, 226, 252);
 	border: solid rgb(50, 0, 255);
 	color: rgb(255, 113, 1);
+  	text-align: center;
+ 	margin-top: -.01%;
 	font-family: 'Bitter', serif;	
-	text-align: center;
-	font-size: 1.25em;
-	position: fixed;
 	width: 100%;
 }
 
 p, ul {
-	color: rgb(50, 0, 255);
 	font-size: 1.2em;
 	margin: 10px;
 }
 
-.container:first-child .grid_12:first-child h1 {
-	margin: 10px 0 0 0;
-}
-
-/* Show Grid */
-.showgrid {
-	background: url("../img/grid-bg.png") repeat-y;
-}
-
 .boxes {
-	background: rgb(246, 240, 191);
+	background: rgb(179, 226, 252);
 	border-radius: 10px;
   	margin: 25px 40px 20px 30px;
-  	margin-top: 100px;
   	box-shadow: 10px 10px 10px rgb(50, 0, 255);
 }
 
 .boxes1 {
-	background: rgb(246, 240, 191);
+	background: rgb(179, 226, 252);
 	border-radius: 10px;
 	height: 400px;
   	margin: 10px 40px 20px 30px;
   	box-shadow: 10px 10px 10px rgb(50, 0, 255);
-  }
+}
+
+/* Gallery Stying */
+.container {
+  background: rgb(246, 240, 191);
+  border: solid rgb(50, 0, 255);
+  border-radius: 10px 10px 10px 10px;
+}
+
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+  border: solid rgb(50, 0, 255);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/*Theme controls how everything looks in Gallery CSS.*/
+
+.gallery {
+  position: relative;
+}
+.gallery .item {
+  height: 650px;
+  overflow: hidden;
+  text-align: center;
+}
+.gallery .controls {
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
+.gallery .control-button {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  transition: color .1s;
+}
+
+/* Layout for Style Tile*/
+section {
+	margin: 10px 10px;
+}
+
+.color-1 {
+	background: rgb(255, 113, 1);
+}
+
+.color-2 {
+	background: rgb(246, 240, 191);
+}
+
+.color-3 {
+	background: rgb(179, 226, 252);
+}
+
+.color-4 {
+	background: rgb(50, 0, 255);
+}
+
+.pattern-1 {
+	background-image: url("../img/old-paper.jpg");
+}
+
+.pattern-2 {
+	background-image: url("../img/paper.jpg");
+}
+
+.pattern-3 {
+	background-image: url("../img/bg-img.png");
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4,
+.pattern-1,
+.pattern-2,
+.pattern-3 {
+	border: 1px solid #000;
+	float: left;
+ 	margin: 10px 20px;
+	height: 50px;
+	width: 50px;
+}
 
 /* top navigation div */
 #navcontainer ul {
 	background-color: rgb(246, 240, 191);
-	float: left;
+	border-radius: 10px;
 	width: 100%;
-	padding-right: 32px; /* bullets are included in the padding area */
-	/* removing bullets requires padding to be added at the right */
+	padding-right: 32px; 
 	padding: 0; /* duplicates the default above, but fixes issues with Safari and IE */
 	margin: 0; /* duplicates the default above, but fixes issues with Safari and IE */
 }
@@ -61,7 +136,6 @@ p, ul {
 #navcontainer ul li a {
 	padding: 0.2em 1em;
 	text-decoration: none;
-	float: left;
 	border-right: 1px solid rgb(50, 0, 255);
 	color: rgb(50, 0, 255);
 }
@@ -71,4 +145,9 @@ p, ul {
 }
 #navcontainer ul li #current { /* sets the link of the active page tab color to be different */
 	background-color: #D2691E;
+}
+
+/* Show Grid */
+.showgrid {
+	background: url("../img/grid-bg.png") repeat-y;
 }
