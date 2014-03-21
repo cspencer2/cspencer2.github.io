@@ -9,13 +9,25 @@ header h1 {
 	color: rgb(255, 113, 1);
   	text-align: center;
  	margin-top: -.01%;
-	font-family: 'Bitter', serif;	
+	font-family: 'Bitter', serif;
+	font-size: 2em;	
 	width: 100%;
+}
+
+h1, h2, h3 {
+	font-family: 'Bitter', serif;
 }
 
 p, ul {
 	font-size: 1.2em;
 	margin: 10px;
+	font-family: 'Raleway', sans-serif;
+}
+
+.boxes1 img {
+	margin: 10px 70px;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 10px 10px 10px rgb(50, 0, 255);
 }
 
 .boxes {
@@ -38,6 +50,7 @@ p, ul {
   background: rgb(246, 240, 191);
   border: solid rgb(50, 0, 255);
   border-radius: 10px 10px 10px 10px;
+  box-shadow: 10px 10px 10px rgb(50, 0, 255);
 }
 
 .gallery .control-button {
@@ -123,7 +136,7 @@ section {
 
 /* top navigation div */
 #navcontainer ul {
-	background-color: rgb(246, 240, 191);
+	background-color: rgb(179, 226, 252);
 	border-radius: 10px;
 	width: 100%;
 	padding-right: 32px; 
@@ -141,7 +154,8 @@ section {
 }
 /* change the background-color to be #369 */
 #navcontainer ul li a:hover { /* controls the over or hover state of rollover */
-	background-color: rgb(179, 226, 252);
+	background-color: rgba(255, 113, 1, .7);
+	border-radius: 10px 10px 10px 10px;
 }
 #navcontainer ul li #current { /* sets the link of the active page tab color to be different */
 	background-color: #D2691E;
