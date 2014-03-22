@@ -1,0 +1,6 @@
+Citations for code sources:
+•	P. Colin Manikoth -- webstarter kit -- everything I learned in Web 368 -- Thank you
+•	Tom Couraud -- navigation link bar
+•	Treehouse -- box and border properties
+•	Samantha Warren -- style tiles
+•	Ben Schwarz -- image gallery
